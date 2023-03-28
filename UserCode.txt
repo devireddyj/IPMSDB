@@ -1,0 +1,9 @@
+UC_ID	UC_Type	UC_UserID	UC_Name	UC_Desc
+408	UT_408	316	UN_316	General service
+324	UT_324	317	UN_317	Offers
+353	UT_353	318	UN_318	Packages
+427	UT_427	319	UN_319	Referals
+318	UT_318	320	UN_320	services
+364	UT_364	321	UN_321	discontinuity
+585	UT_585	322	UN_322	new subscription
+443	UT_443	323	UN_323	old customer

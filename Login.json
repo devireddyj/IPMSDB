@@ -1,0 +1,50 @@
+[
+ {
+  "LoginId": "AW00000001",
+  "LoginRoleID": 80,
+  "LoginUserName": "Ken",
+  "UserPassword": "bE3XiWw="
+ },
+ {
+  "LoginId": "AW00000002",
+  "LoginRoleID": 22,
+  "LoginUserName": "Terri",
+  "UserPassword": "EjJaC3U="
+ },
+ {
+  "LoginId": "AW00000003",
+  "LoginRoleID": 23,
+  "LoginUserName": "Roberto",
+  "UserPassword": "wbPZqMw="
+ },
+ {
+  "LoginId": "AW00000004",
+  "LoginRoleID": 50,
+  "LoginUserName": "Rob",
+  "UserPassword": "PwSunQU="
+ },
+ {
+  "LoginId": "AW00000005",
+  "LoginRoleID": 51,
+  "LoginUserName": "Gail",
+  "UserPassword": "qYhZRiM="
+ },
+ {
+  "LoginId": "AW00000006",
+  "LoginRoleID": 51,
+  "LoginUserName": "Jossef",
+  "UserPassword": "a9GiLUA="
+ },
+ {
+  "LoginId": "AW00000007",
+  "LoginRoleID": 64,
+  "LoginUserName": "Dylan",
+  "UserPassword": "13mu8BA="
+ },
+ {
+  "LoginId": "AW00000008",
+  "LoginRoleID": 23,
+  "LoginUserName": "Diane",
+  "UserPassword": "FlCpzTU="
+ }
+]

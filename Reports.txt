@@ -1,0 +1,9 @@
+ReportID 	ReportType	ReportDesc
+603	SR	Service Report
+604	CR	Customer Report
+605	LR	Login  Report
+606	UR	User  Report
+607	PR	Password  Report
+608	UCR	User Code  Report
+609	PR	Permission  Report
+610	MR	Managerial  Report
