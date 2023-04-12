@@ -1,0 +1,122 @@
+use test;
+insert into user values ('ISP_974026903','Wanida','697-555-0142','Wanida@isp.com','1970 Napa Ct.');
+
+use test;
+insert into user values ('ISP_480168528','Terry','819-555-0175','Terry@isp.com','9833 Mt. Dias Blv.');
+
+use test;
+insert into user values ('ISP_486228782','Sariya','212-555-0187','Sariya@isp.com','7484 Roundtree Drive');
+
+--------------------------
+
+use test;
+insert into customer values (8793,'Jun','6696 Anchor Drive','S7XWeXc=','708-555-0141','Jun@gmail.com','ISP_974026903');
+
+use test;
+insert into customer values (9740,'Suroor','1873 Lion Circle','BpZw68c=','138-555-0118','Suroor@gmail.com','ISP_480168528');
+
+use test;
+insert into customer values (4801,'John','3148 Rose Street','dhGWm88=','399-555-0176','John@gmail.com','ISP_486228782');
+
+------------------------------------------
+
+use test;
+insert into login values ('AW00000001',80,'Wanida','bE3XiWw=');
+
+use test;
+insert into login values ('AW00000002',22,'Terry','EjJaC3U=');
+
+use test;
+insert into login values ('AW00000003',23,'Sariya','wbPZqMw=');
+------------------------------------------------
+
+use test;
+insert into role values (295847284,'CEO','ChiefExecutiveOfficer');
+
+use test;
+insert into role values (245797967,'VP','Vice President of Engineering');
+
+use test;
+insert into role values (509647174,'EM','Engineering Manager');
+-----------------------------------------------
+use test;
+insert into password values (11,'U_11','EngineerPassword','PK','Passkey',8793);
+
+use test;
+insert into password values (12,'U_12','DesignPassword','PP','passPhrase',9740);
+
+
+use test;
+insert into password values (13,'U_13','ServicesPassword','PIN','PIN',4801);
+-------------------------------------
+
+use test;
+insert into Permission values (313,'BE-2349','Executive Office','P_EO',11);
+
+use test;
+insert into Permission values (314,'BE-2908','Discontinued service','P_DS',12);
+
+use test;
+insert into Permission values (316,'BL-2036','New service','P_NS',13);
+------------------------------------
+use test;
+insert into report values (603,'SR','Service Report',8793);
+
+use test;
+insert into report values (604,'CR','Customer Report',9740);
+
+use test;
+insert into report values (605,'LR','Login Report',4801);
+
+---------------------------------
+
+use test;
+insert into UserCode values (408,'UT_408',316,'UN_316','General service',8793);
+
+use test;
+insert into UserCode values (324,'UT_324',317,'UN_317','Offers',9740);
+
+use test;
+insert into UserCode values (353,'UT_353',318,'UN_318','Packages',4801);
+
+-------------------------
+
+
+use test;
+select * from Login;
+
+use test;
+update password set PassDesc='TesterPassword'
+where PassId=11;
+
+
+use test;
+update password set PassDesc='ManagerPassword'
+where PassId=12;
+
+use test;
+delete from role where roleid=509647174;
+
+use test;
+select * from role;
+
+
+use test;
+select * from user;
+
+
+use test;
+select * from customer;
+
+use test;
+select u.*,c.* from user u inner join customer c on u.UserId=c.User_UserId;
+
+use test;
+select r.* from report r left outer join customer c on r.Customer_CustId = c.CustId;
+
+use test;
+select * from report where Customer_CustId in (select CustId from customer);
+
+use test;
+select uc.* from customer c right outer join usercode uc on
+c.CustId = uc.Customer_CustId
